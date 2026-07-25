@@ -83,3 +83,14 @@ def test_get_nth_fibonacci_negative_number():
 
     with pytest.raises(ValueError):
         get_nth_fibonacci(n)
+
+def test_area_of_circle_negative_radius():
+    """Test negative radius raises ValueError."""
+    with pytest.raises(ValueError):
+        area_of_circle(-1)
+
+
+def test_get_nth_fibonacci_negative():
+    """Test negative n raises ValueError."""
+    with pytest.raises(ValueError):
+        get_nth_fibonacci(-1)
